@@ -1,0 +1,37 @@
+  <main>
+    <div class="container ">
+      
+    
+      <div class="row d-flex align-items-center justify-content-center">
+         <div class="col-12 d-flex align-items-center justify-content-center titulo">
+          <h1 class="font-effect-outline">Inspección Técnica de Vehículos</h1>
+        </div>
+        <div class="col-12 mensajes">
+            <h4>Estas son las citas que tenemos registradas:<br>
+            </h4> <br>
+              <h4>
+              {{#each citasEncontradas}}
+              <ul>
+              <li>
+                El día {{fecha}} a las {{hora}} a nombre de {{nombre}}
+                </h4>
+                 <h4><a href="http://localhost:3000/citas/modificarcita/{{id}}" class="btn btn-secondary">Anula estos datos</a></h4>
+              
+              </li>
+              </ul>
+              {{/each}}
+              </h4>
+              
+
+        </div>
+        </div>
+
+    <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center mensajes">
+            <form method="get" action="/citas/nueva">
+            <button class= " btn btn-secondary">Pedir nueva cita</button>
+            </form>
+        </div>
+    </div>      
+    </div>
+  </main>

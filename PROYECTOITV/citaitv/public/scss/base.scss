@@ -1,0 +1,68 @@
+
+
+body{
+    
+    background-image: url("/images/fondo.jpg")
+    
+}
+
+header {
+    
+    width: 100%;
+   
+       
+       
+        a,a:hover{
+            color:grey;
+            margin-left:30px;
+           font-weight: bold;
+            font-size: large;
+            
+            
+    }
+    }
+
+
+main{
+    
+    .container{
+        margin-top: 100px;
+        background-color: rgb(191, 226, 247);
+        border:5px solid rgb(68, 126, 202);
+      
+        .row{
+            
+            background-color:rgb(191, 226, 247);
+            
+            .titulo{
+                margin-top: 30px;
+                color: black;
+                font-family: "Sofia", sans-serif;
+                
+            }
+
+            .mensajes{
+                padding-top:50px;
+                padding-bottom: 50px;
+            }
+            
+          .formulario{
+              padding-top:50px;
+              padding-bottom: 50px;
+              form{
+                  
+                  width: 600px;
+                  font-size: 20px;
+
+                  #hora{
+                    font-size: 16px;
+                    color: rgb(75, 74, 74);
+                  }
+                  }
+              
+          }  
+            
+        }
+    }
+}
+

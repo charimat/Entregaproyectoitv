@@ -1,0 +1,28 @@
+{
+  "name": "js_ejercicios_rutasservnode",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Chari (aunque me he inspirado bastante en el de Marta)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "qrcode": "^1.4.4",
+    "uuidv4": "^6.2.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martasanch/Proyecto-web-citas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Martasanch/Proyecto-web-citas/issues"
+  },
+  "homepage": "https://github.com/Martasanch/Proyecto-web-citas#readme",
+  "description": "Proyecto de citas para Navidades que luego se alargó"
+}

@@ -1,0 +1,44 @@
+<main>
+    <div class="container ">
+      
+    
+      <div class="row d-flex align-items-center justify-content-center">
+         <div class="col-12 d-flex align-items-center justify-content-center titulo">
+          <h1 class="font-effect-outline">Inspección Técnica de Vehículos</h1>
+        </div>
+        <div class="col-12 mensajes">
+            <h4>Dinos tu email para consultar las citas pedidas<br><br>
+            </h4>
+                <form method="post" action="/citas/ver">
+                        <div class="form-group row">
+                       
+                        <div class="col-8">
+                        <div class="input-group">
+                            <input id="email" name="email" type="text" required="required" class="form-control"> 
+                            <div class="input-group-append">
+                            <div class="input-group-text">
+                                <i class="fa fa-at"></i>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                         <div class="col-4">
+                                <button name="submit" type="submit" class="btn btn-dark">Consultar</button>
+                            </div>
+                               
+                        
+                    </div>
+                </form>             
+
+        </div>
+        </div>
+
+    <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center mensajes">
+            <form method="get" action="/citas/nueva">
+            <button class= " btn btn-secondary">Volver</button>
+            </form>
+        </div>
+    </div>      
+    </div>
+  </main>

@@ -1,0 +1,37 @@
+<main>
+    <div class="container ">
+      
+    
+      <div class="row d-flex align-items-center justify-content-center">
+         <div class="col-12 d-flex align-items-center justify-content-center titulo">
+          <h1 class="font-effect-outline">Inspección Técnica de Vehículos</h1>
+        </div>
+        <div class="col-12 mensajes">
+            <h4>¿Quieres ver los datos de alguna cita pedida previamente?<br><br>
+            </h4>
+                <form method="post" action="/citas/modificar">
+                                <div class="form-group row">
+                                
+                                    <div class="col-6">
+                                    <input id="id" name="id" placeholder="Introduzca su id" type="text" class="form-control">
+                                    </div>
+                                
+                                <div class="col-6">
+                                <button name="submit" type="submit" class="btn btn-dark">Ver cita</button>
+                                </div>
+                                </div>
+                              
+                </form>             
+
+        </div>
+        </div>
+
+    <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center mensajes">
+            <form method="get" action="/citas/nueva">
+            <button class= " btn btn-secondary">Pedir cita nueva</button>
+            </form>
+        </div>
+    </div>      
+    </div>
+  </main>

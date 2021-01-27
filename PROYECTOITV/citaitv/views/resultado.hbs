@@ -1,0 +1,41 @@
+  <main>
+    <div class="container text-center">
+  
+      <div class="row d-flex align-items-center justify-content-center ">
+         <div class="col-12 d-flex align-items-center justify-content-center titulo">
+          <h1 class="font-effect-outline">Inspección Técnica de Vehículos</h1>
+        </div>
+        <div class="col-8 d-flex align-items-center justify-content-center mensajes">
+            <h4>
+              Los detalles de esta cita son los siguientes: <br> 
+              <b>Nombre del titular del vehículo:</b><br> {{datosCita.nombre}}<br>
+              <b>Cita reservada para el día:</b><br> {{datosCita.fecha}} <br>
+              <b>Hora:</b><br> {{datosCita.hora}}.<br>
+              <b>Localizador:</b> <br>{{datosCita.id}} <br>
+              (anótelo para posibles consultas o cambios).
+            </h4>
+         </div>
+        <div class="col-4 d-flex align-items-center justify-content-center mensajes">
+                              <canvas id="canvas"></canvas>
+                
+                <script src="/js/qrcode/build/qrcode.min.js"></script>
+                <script>
+                  console.log("{{datosCita}}")
+                  QRCode.toCanvas(document.getElementById('canvas'), "{{datosCita.nombre}}", function (error) {
+                    if (error) console.error(error)
+                    console.log('success!');
+                  })
+                </script> 
+        </div>
+        
+
+        <div class="col-12 d-flex align-items-center justify-content-center mensajes">
+          <form method="get" action="/citas/nueva">
+            <button class= "btn btn-secondary">Pedir una nueva cita
+            </button>
+            </form>
+        </div>
+       
+      </div>      
+    </div>
+  </main>

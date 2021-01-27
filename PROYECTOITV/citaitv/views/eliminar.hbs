@@ -1,0 +1,30 @@
+
+  <main>
+    <div class="container text-center">
+      
+    <div class="row d-flex align-items-center justify-content-center">
+      
+         <div class="col-12 d-flex align-items-center justify-content-center titulo">
+          <h1 class="font-effect-outline">Inspección Técnica de Vehículos</h1>
+         </div>
+        <div class="col-12  mensajes">
+            <h4>Hola {{ citaporId.nombre}}.<br> 
+            Estos son los datos de la cita que has introducido:
+            <br><b>Cita a nombre de:</b> {{ citaporId.nombre}}
+            <br><b>Fecha:</b> {{citaporId.fecha}}
+            <br><b>Hora:</b> {{citaporId.hora}}<br>
+            ¿Quieres cancelar o modificar?.<br>
+            </h4>
+        </div>
+    </div>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-12 d-flex align-items-center justify-content-center mensajes">
+            <form method="get" action="/citas/citaeliminada">
+            <button class= "btn btn-secondary">Sí, esta no me viene bien</button>
+            </form>
+        </div>
+    </div>      
+    
+    </div>      
+    
+  </main>
